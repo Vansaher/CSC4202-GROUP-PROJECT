@@ -1,2 +1,11 @@
 Scenario
 Imagine a city in Terengganu, which has been struck by a severe flood every year. The flood has disrupted infrastructure, causing widespread damage to homes, roads, and utilities. The city is divided into several zones, each with varying levels of flood impact. City authorities face the challenge of allocating limited resources, such as food, water, medical supplies, and rescue teams, to these zones effectively. The objective is to minimize human suffering and maximize the efficiency of the response.
+
+Scenario Specification
+Geographical Setting: Coastal City
+Type of Disaster: Flood
+Damage Impact:  Infrastructure damage
+                Blocked road
+                Disrupted communication
+                Displaced populations
+
