@@ -1,0 +1,78 @@
+The analysis of our algorithm focuses on understanding its correctness, as well as time complexity in different scenarios: best case, worst case, and average case.
+
+Correctness of Dijkstra's Algorithm
+
+Initialization:
+Distances from the source node to all other nodes set to infinite (Integer.MAX_VALUE).
+Distance from source node to itself set to zero.
+
+Relaxation:
+Iteratively update distances to neighboring nodes.
+If a shorter path is found, update the distance.
+
+Termination:
+Algorithm processes all nodes, ensuring shortest paths are finalized.
+
+Proof of Correctness:
+Base Case: Shortest path from the source to itself is zero.
+Inductive Step: Extending correctness to neighboring nodes through relaxation.
+
+Asymptotic Analysis and Recurrence
+
+Recurrence Relation:
+
+T(n) = T(n - 1) + O(log n)
+O(log n) is the time complexity for priority queue operations.
+Time Complexity:
+
+Worst Case: O((V+E)logV)
+Best Case: O((V+E)logV)
+Average Case: O((V+E)logV)
+
+Explanation:
+Priority queue operations (insert, extract-min) dominate time complexity.
+
+Growth of Function - Worst, Best, and Average Case Analysis
+
+Worst Case:
+Time Complexity: O((V+E)logV)
+Processes all vertices and edges.
+
+Best Case:
+Time Complexity: O((V+E)logV)
+All vertices and edges processed to ensure shortest paths.
+
+Average Case:
+Time Complexity: O((V+E)logV)
+Time complexity remains dependent on vertices and edges.
+
+Greedy Algorithm for Supply Distribution
+
+Steps Involved:
+
+Initialization:
+Precompute shortest paths for all pairs of vertices using Dijkstra's algorithm.
+
+Supply Distribution:
+Distribute supplies based on the precomputed shortest paths and demand priorities.
+
+Detailed Time Complexity Analysis:
+
+The Greedy Technique for supply distribution, when analyzed in isolation, has different time complexities for best, average, and worst cases depending on the specifics of the scenario. Here’s a breakdown of its performance in various cases:
+
+Best Case
+Scenario: All demands can be met by supplies from a single location without needing to scan through multiple supply locations.
+Time Complexity: O(V logV) for managing the priority queue.
+Reason: Only a minimal number of priority queue operations are required, as supplies can be fulfilled from a single or minimal number of supply locations.
+
+Average Case
+Scenario: Demands are distributed such that the algorithm has to consider multiple supply locations but not all of them.
+Time Complexity: O(V^2)
+Reason: For most vertices, the algorithm will have to check several supply locations to meet the demands, leading to O(V) operations per vertex.
+
+Worst Case
+Scenario: Every demand requires scanning through all supply locations to find the optimal supply route, and priority queue operations dominate.
+Time Complexity: O(V^2 logV)
+Reason: Each vertex's demand requires checking all other vertices (supply locations), and maintaining the priority queue for all demands increases the complexity due to frequent insertions and deletions.
+
+The Greedy Technique for supply distribution can vary significantly in performance based on the distribution of supplies and demands, with worst-case scenarios dominated by frequent priority queue operations.
