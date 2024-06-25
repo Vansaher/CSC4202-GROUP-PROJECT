@@ -1,0 +1,13 @@
+In the realm of algorithm design and analysis, practical applications of theoretical concepts are essential for mastering the subject. This project, undertaken as part of the "Design and Analysis of Algorithms" course, seeks to bridge theory and practice by addressing a real-world problem: effective resource allocation during a flood disaster in Kuala Terengganu, a coastal city in each coast of Malaysia.
+The project involves several key steps: defining the problem, modeling the flood-affected zones and infrastructure as a graph, specifying algorithms and designing them, analysis of the algorithm, implementing the algorithm, and testing its performance. This comprehensive approach ensures that the algorithm is not only theoretically sound but also practically effective in a real-time disaster scenario.
+After evaluating the strengths and weaknesses of various algorithm design techniques, we select the most suitable approach for our problem; dijkstra's algorithm.
+
+The report covers the following sections:
+
+- Problem Definition: Describing the context, type of disaster, impact, and the importance of finding an optimal solution.
+- Model Development: Illustrating the graph representation of Hulu Langat’s flood-affected zones and routes.
+- Algorithm Design: Explaining the choice of the selected algorithm and its suitability for resource allocation in this scenario.
+- Implementation: Detailing the steps involved in coding the algorithm in Java and integrating real-time data.
+- Algorithm Analysis: Analyzing the correctness and time complexity of the algorithm in best, worst, and average case scenarios.
+- Evaluation and Results: Presenting the performance of the algorithm through specific examples and simulations.
+- Conclusion: Summarizing the findings and suggesting directions for future work.
