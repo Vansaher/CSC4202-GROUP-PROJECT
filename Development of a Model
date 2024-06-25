@@ -1,0 +1,24 @@
+Data Types:
+Graph Representation: Nodes represent locations (supply centers, shelters, hospitals), and edges represent transportation routes with associated travel times and conditions.
+Supply and Demand Arrays: Arrays representing the quantity of supplies at each location and the demand at each location.
+
+Objective Function and Constraints
+
+Objective Function:
+Minimize the total delivery time while meeting the demand at each location.
+
+Constraints:
+- Limited supply quantities at each location.
+- Varying demand levels at different locations.
+- Road conditions and travel times affecting delivery routes.
+
+Example:
+Locations (Nodes): Supply center (A), Shelter (B), Hospital (C), etc.
+Routes (Edges): A-B (10 minutes), A-C (15 minutes), B-C (5 minutes), etc.
+Supplies: A (100 units), B (0 units), C (0 units).
+Demands: A (0 units), B (50 units), C (30 units).
+
+Specification of an Algorithm
+
+Chosen Algorithm
+The chosen algorithm is a combination of Greedy Algorithm and Dijkstra's algorithm (a graph algorithm for shortest paths).
